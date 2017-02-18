@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PathFinder" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc10" />
+		<Build>
+			<Target title="test_grid">
+				<Option output="../output/test_grid/Release/test_grid" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../output/test_grid/" />
+				<Option object_output="../output/test_grid/Release/obj/" />
+				<Option type="1" />
+				<Option compiler="msvc10" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/EHa" />
+					<Add option="/Ox" />
+					<Add option="/DNDEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="test_path">
+				<Option output="../output/test_path/Release/test_path" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../output/test_path/" />
+				<Option object_output="../output/test_path/Release/obj/" />
+				<Option type="1" />
+				<Option compiler="msvc10" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/EHa" />
+					<Add option="/Ox" />
+					<Add option="/DNDEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="astar-cities">
+				<Option output="../output/astar_cities/Release/astar_cities" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../output/astar_cities/" />
+				<Option object_output="../output/astar_cities/Release/obj/" />
+				<Option type="1" />
+				<Option compiler="msvc10" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/EHa" />
+					<Add option="/Ox" />
+					<Add option="/DNDEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="astar_maze">
+				<Option output="../output/astar_maze/Release/astar_maze" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../output/astar_maze/" />
+				<Option object_output="../output/astar_maze/Release/obj/" />
+				<Option type="1" />
+				<Option compiler="msvc10" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/EHa" />
+					<Add option="/Ox" />
+					<Add option="/DNDEBUG" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="/W3" />
+			<Add directory="../" />
+			<Add directory="../src" />
+			<Add directory="../third_party/boost_1_55_0" />
+		</Compiler>
+		<Linker>
+			<Add directory="../third_party/boost_1_55_0/stage/lib" />
+		</Linker>
+		<Unit filename="../src/core/grid.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../src/core/heuristic.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../src/core/node.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../src/core/utils.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../src/finders/astarfinder.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../src/finders/option.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../test/test_grid.cc">
+			<Option target="test_grid" />
+		</Unit>
+		<Unit filename="../test/test_grid.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../test/test_path.cc">
+			<Option target="test_path" />
+		</Unit>
+		<Unit filename="../test/test_path.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../third_party/boost_1_55_0/libs/graph/example/astar-cities.cpp">
+			<Option target="astar-cities" />
+		</Unit>
+		<Unit filename="../third_party/boost_1_55_0/libs/graph/example/astar_maze.cpp">
+			<Option target="astar_maze" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
